@@ -47,12 +47,12 @@ return {
                 ["<M-Space>"] = cmp.mapping.complete({}),
 
                 -- Navigate through snippets
-                ["<Tab>"] = cmp.mapping(function()
+                ["<M-l>"] = cmp.mapping(function()
                     if luasnip.expand_or_locally_jumpable() then
                         luasnip.expand_or_jump()
                     end
                 end, { "i", "s" }),
-                ["<S-Tab>"] = cmp.mapping(function()
+                ["<M-h>"] = cmp.mapping(function()
                     if luasnip.locally_jumpable(-1) then
                         luasnip.jump(-1)
                     end

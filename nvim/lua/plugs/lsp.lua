@@ -73,7 +73,6 @@ return {
                 ruff = {},
                 html = { filetypes = { "html", "twig", "hbs" } },
                 cssls = {},
-                jsonls = {},
                 sqlls = {},
                 dockerls = {},
                 lua_ls = {
