@@ -7,5 +7,5 @@ TERMINAL="alacritty"
 LANGS="go zig python lua luajit"
 DEVTOOLS="fzf"
 
-echo $(sudo $PKG_MANAGER install $FLAGS $ENVTOOLS $TERMINAL $CONTAINER $LANGS $DEVTOOLS)
+echo $(sudo $PKG_MANAGER install $FLAGS $ENVTOOLS $TERMINAL $LANGS $DEVTOOLS)
 
