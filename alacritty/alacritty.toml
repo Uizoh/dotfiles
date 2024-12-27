@@ -27,5 +27,5 @@ x = 4
 y = 4
 
 [general]
-import = ["/home/uizoh/.config/alacritty/catppuccin-mocha.toml"]
+import = ["catppuccin-mocha.toml"]
 

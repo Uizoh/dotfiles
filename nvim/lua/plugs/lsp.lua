@@ -66,7 +66,7 @@ return {
 
         local servers =
             {
-                clangd = {},
+                clangd = { cmd = { "clangd", "--header-insertion=never", } },
                 gopls = {},
                 zls = {},
                 ts_ls = {},

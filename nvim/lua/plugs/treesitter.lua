@@ -11,7 +11,6 @@ return {
             "go",
             "zig",
             "javascript",
-            "java",
             "html",
             "css",
             "json",

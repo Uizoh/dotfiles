@@ -1,6 +1,5 @@
 vim.wo.number = true -- Make line numbers default (default: false)
 vim.o.relativenumber = true -- Set relative numbered lines (default: false)
-vim.opt.termguicolors = true -- Set termguicolors to enable highlight groups (default: false)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.mouse = "a"
