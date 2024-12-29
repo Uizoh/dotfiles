@@ -70,7 +70,7 @@ return {
                 gopls = {},
                 zls = {},
                 ts_ls = {},
-                ruff = {},
+                basedpyright = {},
                 html = { filetypes = { "html", "twig", "hbs" } },
                 cssls = {},
                 sqlls = {},

@@ -19,11 +19,14 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set("n", "<leader>e", ":Ex<CR>", { desc = "Opens File Explorer" })
 vim.keymap.set("n", "<leader>r", "<C-6>", { desc = "Close File Explorer" })
 
+-- Save and/or Quit
+vim.keymap.set("n", "<leader>u", ":update<CR>", { desc = "[U]pdate buffer" })
+vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "[Q]uit buffer" })
+
 -- Navigate
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Go half page up and center screen" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Go half page down and center screen" })
 vim.keymap.set("n", "<leader>st", ":TodoTelescope<CR>", { desc = "[S]earch [T]odo" })
-vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "[Q]uit" })
 
 --Diagnostics
 vim.keymap.set('n', '<leader>cd', vim.diagnostic.setloclist, { desc = 'Open [C]ode [D]iagnostics' })
