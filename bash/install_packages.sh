@@ -2,7 +2,7 @@
 
 PKG_MANAGER="dnf"
 FLAGS=""
-ENVTOOLS="gcc clang node make"
+ENVTOOLS="gcc clang node"
 TERMINAL="alacritty"
 LANGS="go zig python lua luajit"
 DEVTOOLS="fzf"
