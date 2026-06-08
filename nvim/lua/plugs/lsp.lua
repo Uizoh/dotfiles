@@ -66,12 +66,33 @@ return {
 
         local servers =
             {
-                clangd = { cmd = { "clangd", "--header-insertion=never", } },
+                clangd = { cmd = { "clangd", "--header-insertion=never", "--style=file" } },
                 gopls = {},
                 zls = {},
-                ts_ls = {},
+                ts_ls = {
+                    settings = {
+                        javascript = {
+                            inlayHints = {
+                                includeInlayParameterNameHints = "all",
+                                includeInlayFunctionParameterTypeHints = true,
+                                includeInlayVariableTypeHints = true,
+                            },
+                        },
+
+                        implicitProjectConfiguration = {
+                            checkJs = true,
+                        },
+                    },
+                },
                 basedpyright = {},
-                html = { filetypes = { "html", "twig", "hbs" } },
+                html = {
+                    filetypes = { "html", "twig", "hbs" },
+                    -- init_options = {
+                    --     provideFormatter = true,
+                    --     embeddedLanguages = { css = true, javascript = true },
+                    --     configurationSection = { 'html', 'css', 'javascript' },
+                    -- },
+                },
                 cssls = {},
                 sqlls = {},
                 dockerls = {},
