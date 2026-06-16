@@ -8,7 +8,6 @@ return {
             "c",
             "lua",
             "python",
-            "go",
             "zig",
             "javascript",
             "html",
@@ -20,6 +19,7 @@ return {
             "dockerfile",
             "markdown",
             "markdown_inline",
+            "java"
         },
 
         auto_install = true,
