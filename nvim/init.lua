@@ -28,5 +28,6 @@ require("lazy").setup({
     require("plugs.misc"),
 })
 
+
 -- vim.cmd.colorscheme("catppuccin-mocha")
 vim.cmd.colorscheme("eva01")

@@ -1,32 +1,27 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    main = "nvim-treesitter.configs",
+    "romus204/tree-sitter-manager.nvim",
+    dependencies = {}, -- tree-sitter CLI must be installed system-wide
+    config = function()
+        require("tree-sitter-manager").setup({
+            ensure_installed = {
+                "c",
+                "lua",
+                "python",
+                "zig",
+                "html",
+                "css",
+                "javascript",
+                "json",
+                "toml",
+                "sql",
+                "regex",
+                "dockerfile",
+                "markdown",
+                "markdown_inline",
+            },
 
-    opts = {
-        ensure_installed = {
-            "c",
-            "lua",
-            "python",
-            "zig",
-            "javascript",
-            "html",
-            "css",
-            "json",
-            "toml",
-            "sql",
-            "regex",
-            "dockerfile",
-            "markdown",
-            "markdown_inline",
-            "java"
-        },
-
-        auto_install = true,
-        highlight = {
-            enable = true,
-            additional_vim_regex_highlighting = { "ruby" },
-        },
-        indent = { enable = true, disable = { "ruby" } },
-    },
+            auto_install = true,
+            noauto_install = { "c", "lua", "vim" },
+        })
+    end,
 }
